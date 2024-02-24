@@ -2,6 +2,7 @@
 
 import ReactQueryClientProvider from "@/components/ReactQueryClientProvider/ReactQueryClientProvider";
 import "./globals.css";
+import { Suspense } from "react";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <Suspense>
+          <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        </Suspense>
       </body>
     </html>
   );
