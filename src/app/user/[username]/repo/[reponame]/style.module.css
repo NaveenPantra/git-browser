@@ -1,0 +1,110 @@
+.section {
+  margin: 3rem;
+}
+
+.details {
+  margin-bottom: 2rem;
+  overflow: scroll;
+}
+
+.detailsHeading {
+  font-size: 1.7rem;
+  padding: 1rem 0 .5rem;
+}
+
+.tableContainer {
+  max-height: 200px;
+  width: fit-content;
+  overflow: scroll;
+  border: var(--border-1);
+  box-shadow: var(--box-shadow-1);
+}
+
+.tableContainer table {
+  width: 300px;
+}
+
+.tableContainer thead {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  border-bottom: var(--border-1);
+  border-collapse: separate;
+  color: white;
+}
+
+.tableContainer th,
+.tableContainer td {
+  border: 1px solid;
+  text-align: left;
+  padding: 5px 1rem;
+}
+
+.tableContainer tr {
+}
+
+.readMeContainer {
+  border: var(--border-1);
+  box-shadow: var(--box-shadow-1);
+  margin-bottom: 2rem;
+}
+
+.readMeHeading {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-bottom: var(--border-1);
+}
+
+.readMe {
+  padding: 2rem;
+}
+
+.readMe table {
+  border-collapse: collapse;
+  border: var(--border-1);
+  box-shadow: var(--box-shadow-1);
+}
+
+.readMe img {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+.readMe td, .readMe th {
+  border: var(--border-1);
+}
+
+.commitGraph {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.month {
+  border: var(--border-1);
+  box-shadow: var(--box-shadow-1);
+}
+
+.monthName {
+  text-align: center;
+  padding: 1rem;
+  background: var(--txt-clr);
+  color: var(--bg-clr);
+}
+
+.calendar {
+  padding: 1rem 2rem;
+  --w: 12px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(var(--r, 6), var(--w));
+  grid-template-rows: repeat(7, var(--w));
+  grid-auto-flow: column;
+}
+
+.day {
+  border: solid;
+}

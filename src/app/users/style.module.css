@@ -1,0 +1,36 @@
+.main {}
+
+.form {
+  margin: 30px;
+  text-align: center;
+}
+
+.input {
+  width: clamp(50%, 200px, 80%);
+  padding: 1rem;
+  font-size: 5rem;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  border: var(--border-1);
+  outline: none;
+  box-shadow: var(--box-shadow-1);
+}
+
+.input::placeholder {
+  opacity: 0.4;
+  font-size: 4rem;
+}
+
+.users {
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .input {
+    width: clamp(90%, 200px, 80%);
+  }
+}

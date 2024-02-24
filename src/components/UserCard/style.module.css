@@ -1,0 +1,41 @@
+.card {
+  /*width: 150px;*/
+  border-radius: 0;
+  border: var(--border-1);
+  box-shadow: var(--box-shadow-1);
+}
+
+.card:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+
+.link {
+  display: flex;
+}
+
+.figure {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin: 1rem;
+}
+
+.img {
+  --w: 75px;
+  width: var(--w);
+  height: var(--w);
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+.figcaption p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+}
+
+.username {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}

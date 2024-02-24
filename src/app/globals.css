@@ -1,0 +1,61 @@
+:root {
+  --txt-clr: #000000;
+  --bg-clr: #ffffff;
+  --bg-clr-trans: #0000000f;
+  --border-1: 2px solid var(--txt-clr);
+  --box-shadow-1: 4px 4px 0px 0px var(--txt-clr);
+  --box-shadow-hover: var(--box-shadow-1), -4px -4px 0 0 var(--txt-clr);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  letter-spacing: -0.5px;
+}
+
+h1, h2, h3, h4, h5, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+a, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  display: inline-block;
+}
+
+a:after {
+  /*content: '';*/
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: currentColor;
+  transition: transform 0.3s;
+}
+
+input {
+  font-family: inherit;
+  border: var(--border-1);
+  box-shadow: var(--box-shadow-1);
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}

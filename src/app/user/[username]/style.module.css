@@ -1,0 +1,58 @@
+.section {
+  margin: 2rem 3rem;
+}
+
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.header {}
+
+.input {
+  font-size: 1.5rem;
+  padding: 1rem;
+  outline: none;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 1.5rem;
+
+}
+
+.selectContainer {
+  padding: 1rem;
+  border: var(--border-1);
+  box-shadow: var(--box-shadow-1);
+}
+
+.select {
+  font-family: inherit;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+}
+
+.userCard {
+  margin-top: 2rem;
+}
+
+.userCard > div {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.repos {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
