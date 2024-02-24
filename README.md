@@ -11,7 +11,7 @@
 
 > Built With Next.js
 
-## Authors
+## Author
 - [Naveen Pantra](https://github.com/naveenpantra)
 
 #### Features
