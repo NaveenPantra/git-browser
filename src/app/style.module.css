@@ -6,3 +6,13 @@
   text-align: center;
 }
 
+
+.main a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: currentColor;
+  transition: transform 0.3s;
+}
+
